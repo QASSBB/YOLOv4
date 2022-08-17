@@ -84,8 +84,37 @@
 ![image](https://user-images.githubusercontent.com/79627981/185039633-0334b523-71fc-4431-a0ee-b524a844c965.png)
 ## 在cmd內輸入這串 git clone  https://github.com/AlexeyAB/darknet
 ![image](https://user-images.githubusercontent.com/79627981/185039528-10a5a877-cd3a-4cc8-8b8c-b727e64e1955.png)
+## 把 D:\opencv\build\bin\Release 內的 opencv_ffmpeg410_64.dll跟opencv_world410.dll 複製到               D:\Yolo_v4\darknet\buil d\darknet\x64裡面
+![image](https://user-images.githubusercontent.com/79627981/185040694-182b3b50-7644-43cd-8d79-bfb283472c48.png)
+## 再把 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin 內的 cudnn64_8.dill 放到 D:\Yolo_v4\darknet\build\darknet\x64裡面
+![image](https://user-images.githubusercontent.com/79627981/185041200-3cdb0be3-4a01-41e3-a8fc-bd3430fc759b.png)
+## 把darknet.vcxproj 用VScode打開，把程式碼裡面全部的CUDA的版本改成 11.7
+![image](https://user-images.githubusercontent.com/79627981/185041310-821e4395-c828-4f7c-b00e-b6e5da702f42.png)
+![image](https://user-images.githubusercontent.com/79627981/185041506-34bef650-0ca0-49c3-9b77-d90dc03b2112.png)
+## 把跟上一步一樣 將yolo_cpp_dll.vcxproj用VScode打開並把改成 11.7
 
+# 建置yolo_cpp.dill
+## 將yolo_cpp_dll.vcxproj用VS打開並建置
+## 這邊應該會出錯
+![image](https://user-images.githubusercontent.com/79627981/185041971-50df3c52-42c4-47be-bae2-bbc998f14f02.png)
 
+# 更改屬性
+##  D:\Yolo_v4\darknet\build\darknet 用VS打開 darknet.sln
+![image](https://user-images.githubusercontent.com/79627981/185042359-0ef8ed68-8501-47f1-af0d-ff7209958bb5.png)
+## 打開darknet屬性
+![image](https://user-images.githubusercontent.com/79627981/185042321-1fe148e1-398e-442f-a7aa-6a5f0e9f5d55.png)
+## https://youtu.be/PVf16gIhnek?t=1735 這邊步驟比較多所以看影片照做比較快
+### CUDA Device這邊時影片會把compute75_,sm_75刪掉，而我的不是75是85但沒差我還是照刪了只留第一個
+![image](https://user-images.githubusercontent.com/79627981/185042449-f8dd812c-bac4-4b44-bff1-2d9e5a0deca4.png)
+
+# 開始測試
+## 到 D:\Yolo_v4\darknet\build\darknet\x64 輸入cmd
+![image](https://user-images.githubusercontent.com/79627981/185043354-6b5e3be8-cd2e-4114-a526-bd111cba420c.png)
+##　在小黑輸入　darknet.exe detector test cfg/coco.data cfg/yolov4.cfg yolov4.weights 
+### 這邊會出錯
+![image](https://user-images.githubusercontent.com/79627981/185043731-a474e939-0b7d-4fde-8395-2ba7a3da4a52.png)
+## 這邊再輸入圖片的路徑就可以成功執行了
+![image](https://user-images.githubusercontent.com/79627981/185043765-9234d29d-d4b7-4eb1-a94e-7019ab13bf51.png)
 # YORO!
-![image](https://user-images.githubusercontent.com/79627981/185030348-3ec17bcf-2f72-4c1d-bc1f-9cd0bbaa14d8.png)
+![image](https://user-images.githubusercontent.com/79627981/185044067-1e79cd42-76a1-4c2c-b474-cb76ef2b0674.png)
 # 參考資料 https://www.youtube.com/watch?v=PVf16gIhnek&ab_channel=%E6%9F%AF%E6%9F%AF
