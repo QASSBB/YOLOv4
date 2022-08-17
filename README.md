@@ -25,9 +25,9 @@
 ![image](https://user-images.githubusercontent.com/79627981/185033380-1a547c9e-c671-4aea-bc19-5a8f00453a04.png)
 
 # 更新顯卡驅動
-# 先確認顯卡型號
+#先確認顯卡型號
 ![image](https://user-images.githubusercontent.com/79627981/185033750-1e33cecf-4068-4602-83a7-2edde2251c91.png) 
-# 到 https://www.nvidia.com/zh-tw/geforce/drivers/ 去更新驅動
+#到 https://www.nvidia.com/zh-tw/geforce/drivers/ 去更新驅動
 ![image](https://user-images.githubusercontent.com/79627981/185033927-07b869c7-f3af-4137-bfff-e6d4c3c60b7f.png)
 
 # 安裝CUDA
@@ -50,11 +50,46 @@
 ### 影片內的檔案才幾個而我有很多，但應該沒差
 ![image](https://user-images.githubusercontent.com/79627981/185035954-b09cd531-b34b-4afd-9899-132251936800.png)
 
-# 安裝OpenCv 
-## 安裝opencv 4.1.0  https://github.com/opencv/opencv/archive/4.1.0.zip
-## 安裝opencv_contrib https://github.com/opencv/opencv_contrib/archive/refs/heads/4.x.zip
+
+
+
+## 安裝OpenCv (https://opencv.org/releases/)
+### 安裝在C槽或D槽
 ![image](https://user-images.githubusercontent.com/79627981/176902332-476e8dfe-f65e-413b-987d-372bebb9e9a2.png)
 ![image](https://user-images.githubusercontent.com/79627981/176902672-04cb97ab-14af-4407-81a6-bd466de47ea5.png)
+## 在C:\或D:\新增一個opencv資料夾
+## 安裝完後將兩個檔案解壓縮然後放到剛剛建立的opcv資料夾內
+![image](https://user-images.githubusercontent.com/79627981/185037049-b71e5bc8-5fef-4be5-9c3b-b3006b19f750.png)
+
+# 使用CMake
+## 在上一步的opencv資料夾中建一個build資料夾
+## 進到D:\opencv\opencv-4.1.0\cmake
+![image](https://user-images.githubusercontent.com/79627981/185037465-cfe79000-5f05-4fbc-96ae-6c913abd722a.png)
+## 打開 OpenCVDetectPython 將裡面所有的python2改成python3 然後儲存就可以關掉了
+![image](https://user-images.githubusercontent.com/79627981/185037636-e72a3bb8-71b8-4f13-bc5e-95123737c44d.png)
+## 打開CMake 按下Configure
+![image](https://user-images.githubusercontent.com/79627981/185037957-0c4bb381-bbca-4f72-963c-cc8626dbd663.png)
+## 選完這兩個後再Configure一次沒問題的話Generate就可以了
+![image](https://user-images.githubusercontent.com/79627981/185038276-d59c8f89-a429-4dde-8632-0cc5d4d5ddb5.png)
+![image](https://user-images.githubusercontent.com/79627981/185038304-68382693-45d0-4876-8ee0-e0a0821291c6.png)
+## 進到build資料夾內
+![image](https://user-images.githubusercontent.com/79627981/185038664-42f63433-6d2d-471c-91e9-20466e919802.png)
+## 進到VS內後把Debug改成Release 然後對 ALL BUILD 跟 INSTALL 進行建置，這邊應該會出現錯誤，如果都沒錯就可以關掉了
+![image](https://user-images.githubusercontent.com/79627981/185038774-71e683d6-5038-47b5-99dc-352bb11334b8.png)
+
+# 安裝darknet
+新增一個Yolo_v4資料夾
+## Yolo_v4到資料夾內輸入cmd
+## 在cmd內輸入這串 git clone  https://github.com/AlexeyAB/darknet
+![image](https://user-images.githubusercontent.com/79627981/185039633-0334b523-71fc-4431-a0ee-b524a844c965.png)
+
+![image](https://user-images.githubusercontent.com/79627981/185039528-10a5a877-cd3a-4cc8-8b8c-b727e64e1955.png)
+
+![image](https://user-images.githubusercontent.com/79627981/185039471-ab501430-3522-4591-9ec4-7c6b8ca58f8a.png)
+
+
+
+
 ## 至 https://github.com/AlexeyAB/darknet 去下載
 # YORO!
 ![image](https://user-images.githubusercontent.com/79627981/185030348-3ec17bcf-2f72-4c1d-bc1f-9cd0bbaa14d8.png)
