@@ -69,7 +69,7 @@
 ![image](https://user-images.githubusercontent.com/79627981/185037636-e72a3bb8-71b8-4f13-bc5e-95123737c44d.png)
 ## 打開CMake 按下Configure
 ![image](https://user-images.githubusercontent.com/79627981/185037957-0c4bb381-bbca-4f72-963c-cc8626dbd663.png)
-## 選完這兩個後再Configure一次沒問題的話Generate就可以了
+## 選完BUILD_opencv_world[勾]、OPENCV_GENERATE_SETUPVARS[不勾]這兩個後，再Configure一次沒問題的話Generate就可以了
 ![image](https://user-images.githubusercontent.com/79627981/185038276-d59c8f89-a429-4dde-8632-0cc5d4d5ddb5.png)
 ![image](https://user-images.githubusercontent.com/79627981/185038304-68382693-45d0-4876-8ee0-e0a0821291c6.png)
 ## 進到build資料夾內
