@@ -25,9 +25,9 @@
 ![image](https://user-images.githubusercontent.com/79627981/185033380-1a547c9e-c671-4aea-bc19-5a8f00453a04.png)
 
 # 更新顯卡驅動
-#先確認顯卡型號
+# 先確認顯卡型號
 ![image](https://user-images.githubusercontent.com/79627981/185033750-1e33cecf-4068-4602-83a7-2edde2251c91.png) 
-#到 https://www.nvidia.com/zh-tw/geforce/drivers/ 去更新驅動
+# 到 https://www.nvidia.com/zh-tw/geforce/drivers/ 去更新驅動
 ![image](https://user-images.githubusercontent.com/79627981/185033927-07b869c7-f3af-4137-bfff-e6d4c3c60b7f.png)
 
 # 安裝CUDA
@@ -50,11 +50,9 @@
 ### 影片內的檔案才幾個而我有很多，但應該沒差
 ![image](https://user-images.githubusercontent.com/79627981/185035954-b09cd531-b34b-4afd-9899-132251936800.png)
 
-
-
-
-## 安裝OpenCv (https://opencv.org/releases/)
-### 安裝在C槽或D槽
+# 安裝OpenCv 
+## 安裝opencv 4.1.0  https://github.com/opencv/opencv/archive/4.1.0.zip
+## 安裝opencv_contrib https://github.com/opencv/opencv_contrib/archive/refs/heads/4.x.zip
 ![image](https://user-images.githubusercontent.com/79627981/176902332-476e8dfe-f65e-413b-987d-372bebb9e9a2.png)
 ![image](https://user-images.githubusercontent.com/79627981/176902672-04cb97ab-14af-4407-81a6-bd466de47ea5.png)
 ## 至 https://github.com/AlexeyAB/darknet 去下載
