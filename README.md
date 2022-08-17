@@ -78,19 +78,14 @@
 ![image](https://user-images.githubusercontent.com/79627981/185038774-71e683d6-5038-47b5-99dc-352bb11334b8.png)
 
 # 安裝darknet
-新增一個Yolo_v4資料夾
+# 新增一個Yolo_v4資料夾
+![image](https://user-images.githubusercontent.com/79627981/185039471-ab501430-3522-4591-9ec4-7c6b8ca58f8a.png)
 ## Yolo_v4到資料夾內輸入cmd
-## 在cmd內輸入這串 git clone  https://github.com/AlexeyAB/darknet
 ![image](https://user-images.githubusercontent.com/79627981/185039633-0334b523-71fc-4431-a0ee-b524a844c965.png)
-
+## 在cmd內輸入這串 git clone  https://github.com/AlexeyAB/darknet
 ![image](https://user-images.githubusercontent.com/79627981/185039528-10a5a877-cd3a-4cc8-8b8c-b727e64e1955.png)
 
-![image](https://user-images.githubusercontent.com/79627981/185039471-ab501430-3522-4591-9ec4-7c6b8ca58f8a.png)
 
-
-
-
-## 至 https://github.com/AlexeyAB/darknet 去下載
 # YORO!
 ![image](https://user-images.githubusercontent.com/79627981/185030348-3ec17bcf-2f72-4c1d-bc1f-9cd0bbaa14d8.png)
 # 參考資料 https://www.youtube.com/watch?v=PVf16gIhnek&ab_channel=%E6%9F%AF%E6%9F%AF
